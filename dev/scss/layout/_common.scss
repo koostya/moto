@@ -1,0 +1,153 @@
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container-fluid {
+	max-width: 1170px;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube:before {
+  content: "\e900";
+  color: #f61c0d;
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e902";
+}
+.icon-time:before {
+  content: "\e903";
+}
+.icon-message:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+
+.mobile-hidden {
+	display: none;
+
+	@media (min-width: 992px) {
+		display: block;
+	}
+}
+
+.desktop-hidden {
+	display: block;
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+
+.row-flex {
+	display: flex;
+	justify-content: space-beetwen;
+}
+
+#main {
+
+	.container-fluid {
+		max-width: 1024px;
+	}
+}
+
+section.main_banner {
+	position: relative;
+	padding-top: 19px;
+
+	.picture {
+		margin-right: 12px;
+		max-width: 669px;
+		min-height: 355px;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+form.ask_menedger {
+	position: relative;
+	background-color: #fff;
+	padding: 44px 7px 41px 7px;
+	box-shadow: 0 3px 17px -4px rgba(0, 0, 0, 0.6);
+	text-align: center;
+	
+	.title {
+		color: #000;
+		font-size: 	18px;
+		text-align: center;
+		margin-bottom: 38px;
+	}
+
+	input[type="text"] {
+		background-color: $gray-light;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 16px;
+		color: $gray;
+		width: 100%;
+		height: 54px;
+		border: none;
+		margin-bottom: 22px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	input[type="submit"] {
+		margin-top: 15px;
+	}
+}
+
+input[type="submit"] {
+	background-color: $green;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	color: $gray;
+	padding: 20px 45px 17px 45px;
+	border: none;
+	color: #fff;
+	overflow: hidden;
+	transition: opacity .3s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		opacity: .6;
+	}
+}

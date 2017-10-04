@@ -86,7 +86,7 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
   \******************/
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ../scss/style.scss */ 0);\r\n\r\nconsole.log('ok');\r\n\r\nfunction say() {\r\n\tconsole.log('good');\r\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2luZGV4LmpzPzI2NDUiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnLi4vc2Nzcy9zdHlsZS5zY3NzJyk7XHJcblxyXG5jb25zb2xlLmxvZygnb2snKTtcclxuXHJcbmZ1bmN0aW9uIHNheSgpIHtcclxuXHRjb25zb2xlLmxvZygnZ29vZCcpO1xyXG59XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9pbmRleC5qc1xuLy8gbW9kdWxlIGlkID0gMVxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
+eval("__webpack_require__(/*! ../scss/style.scss */ 0);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2luZGV4LmpzPzI2NDUiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnLi4vc2Nzcy9zdHlsZS5zY3NzJyk7XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9pbmRleC5qc1xuLy8gbW9kdWxlIGlkID0gMVxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
 
 /***/ })
 /******/ ]);

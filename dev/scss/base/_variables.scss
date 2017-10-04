@@ -1,0 +1,9 @@
+// bootstrap
+$bootstrap-sass-asset-helper: false !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "../assets/", "/fonts/bootstrap/") !default;
+
+// colors
+$blue:        #1a2c44;
+$green:       #63b72d;
+$gray:        #707070;
+$gray-light:  #eeeeee;

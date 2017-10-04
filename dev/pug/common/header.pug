@@ -1,1 +1,38 @@
-h1 I'm header
+header#header
+	.container-fluid
+		.row
+			.col-md-10
+				nav.header_nav
+					ul
+						li.item
+							a(href="#") Главная
+						li.item
+							a(href="#") Мототракторы
+						li.item
+							a(href="#") Минитракторы
+						li.item
+							a(href="#") Мотоблоки
+						li.item
+							a(href="#") Навесное оборудование
+						li.item
+							a(href="#") Генераторы
+			.col-md-2
+				.header_buts
+					a.item.search(href="#")
+						i.icon-search
+					a.item.cart(href="#")
+						i.icon-cart
+						span.quantity 
+							span 3
+.header_banner
+	.container-fluid
+		.row
+			.col-xs-12
+				.banner
+					.row
+						.col-md-3.col-md-offset-1.col-xs-12
+							.logo
+								a(href="#")
+									img(src="assets/images/logo.png", alt="MOTO KOSMOS")
+						.col-md-5.col-md-offset-3
+							span.text.mobile-hidden Лучший выбор - качественной техники

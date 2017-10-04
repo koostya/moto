@@ -20,25 +20,19 @@ module.exports = {
     
   module: {
     loaders: [
-        {
-          test: /\.jsx?$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',  
-          query: {
-            presets: ['env', 'react', "latest"]
-          }
-        },
-        {
-          test: /\.scss?$/,
-          loader: 'style-loader!css-loader?url=false!sass-loader'
-        },
-        { 
-          test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/, loader: 'url-loader?limit=100000' 
-        },
-        { 
-          test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file" 
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',  
+        query: {
+          presets: ['env', 'react', "latest"]
         }
-      ],
+      },
+      {
+        test: /\.scss?$/,
+        loader: 'style-loader!css-loader?url=false!sass-loader!autoprefixer-loader'
+      }
+    ],
     rules: [
       {
         test: /\.scss$/,
@@ -53,7 +47,15 @@ module.exports = {
         options: {
           pretty: true
         }
-      }
+      },
+      {
+        test: /\.(|svg|eot|ttf|woff|woff2)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000
+        }
+      },
+      {test: /\.(jpe?g|png|gif)$/i, loader: "file-loader?name=../assets/images/[name].[ext]"}
     ]
   },
   plugins: [
@@ -61,15 +63,13 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: __dirname + "/dev/assets", to: __dirname + "/public/assets"}
     ]),
+    new CopyWebpackPlugin([
+      {from: __dirname + "/dev/js/jQuery", to: __dirname + "/public/js"}
+    ]),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       chunks: ['index'],
       template: PATHS.dev + '/index.pug'
-    }),
-    new HtmlWebpackPlugin({
-      filename: '../second.html',
-      chunks: ['second'],
-      template: PATHS.dev + '/second.pug'
     })
   ]
 }   
