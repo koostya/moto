@@ -159,7 +159,11 @@ a {
 
 .row-flex {
   display: flex;
-  justify-content: space-beetwen; }
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .row-flex > div[class^='col'] {
+    float: none; }
 
 #main .container-fluid {
   max-width: 1024px; }
