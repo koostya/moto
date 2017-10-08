@@ -101,6 +101,9 @@ header {
     justify-content: center;
     width: 100%; }
 
+body {
+  font-family: "Ubuntu" !important; }
+
 #wrapper {
   position: relative;
   overflow: hidden; }
