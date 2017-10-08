@@ -165,6 +165,23 @@ a {
   .row-flex > div[class^='col'] {
     float: none; }
 
+.button {
+  background-color: #63b72d;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: #707070;
+  padding: 20px 45px 17px 45px;
+  border: none;
+  color: #fff;
+  overflow: hidden;
+  transition: opacity .3s;
+  min-width: 190px; }
+  .button:hover {
+    opacity: .6;
+    cursor: pointer; }
+
 #main .container-fluid {
   max-width: 1024px; }
 
@@ -235,8 +252,9 @@ section.categories {
 .category {
   position: relative;
   border: 1px solid #707070;
-  padding: 32px 0 45px;
-  margin-top: 20px; }
+  padding: 32px 10px 45px 10px;
+  margin-top: 20px;
+  max-width: 320px; }
   .category .title {
     display: block;
     width: 100%;
@@ -251,6 +269,54 @@ section.categories {
       display: inline-block;
       max-height: 176px;
       max-width: 100%; }
+
+section.tabs {
+  position: relative;
+  padding: 53px 0 119px; }
+  section.tabs .navigation {
+    text-align: center;
+    padding-bottom: 66px; }
+    section.tabs .navigation .item {
+      font-size: 24px;
+      color: #000;
+      position: relative;
+      margin-right: 47px;
+      cursor: pointer;
+      font-weight: 600; }
+      section.tabs .navigation .item:hover:before {
+        width: 71px; }
+      section.tabs .navigation .item:last-child {
+        margin-right: 0; }
+      section.tabs .navigation .item:before {
+        position: absolute;
+        content: '';
+        bottom: -23px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #63b72d;
+        width: 0;
+        height: 3px;
+        transition: all .3s; }
+    section.tabs .navigation .active:before {
+      width: 71px; }
+  section.tabs .products {
+    position: relative; }
+    section.tabs .products .section {
+      display: none; }
+      section.tabs .products .section.active_tab {
+        display: block; }
+    section.tabs .products .item {
+      position: relative;
+      text-align: center;
+      max-width: 311px;
+      padding-bottom: 32px; }
+      section.tabs .products .item .description {
+        max-width: 235px;
+        display: inline-block; }
+      section.tabs .products .item .cost {
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 22px; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
