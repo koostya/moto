@@ -1,14 +1,37 @@
-// bootstrap
-$bootstrap-sass-asset-helper: false !default;
-$icon-font-path: if($bootstrap-sass-asset-helper, "../assets/", "/fonts/bootstrap/") !default;
-
 // colors
 $blue:        #1a2c44;
+$blue-light:  #1A2C92;
 $green:       #63b72d;
 $gray:        #707070;
+$gray2:       #949494;
 $gray-light:  #eeeeee;
 $black:       #000;
 $white:       #fff;
 
 // fonts
 $main:        'Ubuntu' !important;
+
+// bootstrap
+$bootstrap-sass-asset-helper: false !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "../assets/", "/fonts/bootstrap/") !default;
+
+// grig
+$screen-xs:                  320px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  480px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              768px !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;

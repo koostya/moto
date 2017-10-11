@@ -12,9 +12,6 @@ body {
 	position: relative;
 }
 
-a {
-	text-decoration: none;
-}
 
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
@@ -189,6 +186,23 @@ input[type="submit"] {
 	}
 }
 
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	min-width: 244px;
+	height: 58px;
+	border: 1px solid $gray;
+	padding: 25px 10px 25px 20px;
+	font-size: 14px;
+	color: $black;
+	transition: all .3s;
+
+	&:focus {
+		outline: none;
+		border-color: $blue-light;
+	}
+}  
+
 section.categories {
 	padding: 7px 0 0 0;
 }
@@ -198,7 +212,7 @@ section.categories {
 	border: 1px solid $gray;
 	padding: 32px 10px 45px 10px;
 	margin-top: 20px;
-	max-width: 320px;
+	max-width: 100%;
 
 	.title {
 		display: block;
@@ -305,6 +319,7 @@ section.tabs {
 
 section.news {
 	position: relative;
+	margin-bottom: 48px;
 	
 	.container-fluid {
 		max-width: 1098px;
@@ -314,5 +329,134 @@ section.news {
 		font-weight: 600;
 		font-size: 24px;
 		color: $black;
+		padding-bottom: 56px;
+	}
+
+	.item {
+		position: relative;
+		text-align: center;
+		
+		.img {
+			text-align: center;
+			overflow: hidden;
+			margin-bottom: 23px;
+
+			img {
+				display: inline-block;
+				max-height: 209px;
+				max-width: 100%;
+			}
+		}
+
+		.title {
+			font-size: 16px;
+			text-align: center;
+			padding: 0;
+			max-width: 400px;
+			margin: 0 auto;
+			margin-bottom: 27px;
+		}
+
+		.text {
+			font-size: 14px;
+			max-width: 400px;
+			text-align: left;
+			margin: 0 auto;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $black;
+		transition: all .3s;
+
+		&:hover {
+			text-decoration: underline;
+			color: $blue;
+		}
+	}
+}
+
+section.about_company {
+	position: relative;
+	background: url('../assets/images/about_bg.png') 0 100% no-repeat;
+	background-size: cover;
+	padding: 110px 0 137px;
+	margin-bottom: 90px;
+	
+	.container-fluid {
+		max-width: 1098px;
+	}
+
+	.title {
+		font-size: 30px;
+		color: $white;
+		font-weight: 600;
+		padding-bottom: 60px;
+	}
+
+	.description {
+		font-size: 14px;
+		color: $white;
+
+		p {
+			margin-bottom: 28px;
+		}
+	}
+}
+
+section.our_partners {
+	position: relative;
+	margin-bottom: 118px;
+
+	.container-fluid {
+		max-width: 1000px;
+	}
+
+	.title {
+		font-weight: 600;
+		font-size: 24px;
+		color: $black;
+		padding-bottom: 56px;
+	}
+}
+
+section.consultation {
+	position: relative;
+	margin-bottom: 23px;
+
+	.container-fluid {
+		max-width: 810px;
+	}
+
+	.title {
+		color: $green;
+		font-size: 30px;
+		padding-bottom: 72px;
+		font-weight: 500;
+	}
+
+	.inputs {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		margin-bottom: 37px;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+
+		input {
+			margin-bottom: 10px;
+
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			@media (min-width: 768px) {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
