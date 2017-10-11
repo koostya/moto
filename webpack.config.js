@@ -63,13 +63,14 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: __dirname + "/dev/assets", to: __dirname + "/public/assets"}
     ]),
-    new CopyWebpackPlugin([
-      {from: __dirname + "/dev/js/jQuery", to: __dirname + "/public/js"}
-    ]),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       chunks: ['index'],
       template: PATHS.dev + '/index.pug'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ]
 }   

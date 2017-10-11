@@ -84,8 +84,9 @@ a {
 	text-align: center;
 	display: inline-block;
 	font-size: 16px;
+	font-weight: 600;
 	color: $gray;
-	padding: 20px 45px 17px 45px;
+	padding: 15px 45px 17px 45px;
 	border: none;
 	color: #fff;
 	overflow: hidden;
@@ -98,7 +99,7 @@ a {
 	}
 }
 
-#main {
+main {
 
 	.container-fluid {
 		max-width: 1024px;
@@ -172,7 +173,8 @@ input[type="submit"] {
 	display: inline-block;
 	font-size: 16px;
 	color: $gray;
-	padding: 20px 45px 17px 45px;
+	font-weight: 500;
+	padding: 15px 45px 17px 45px;
 	border: none;
 	color: #fff;
 	overflow: hidden;
@@ -279,8 +281,13 @@ section.tabs {
 		.item {
 			position: relative;
 			text-align: center;
-			max-width: 311px;
+			min-width: 311px;
 			padding-bottom: 32px;
+			margin: 0 15px 0 15px;
+
+			&:focus {
+				outline: none;
+			}
 
 			.description {
 				max-width: 235px;
@@ -293,5 +300,19 @@ section.tabs {
 				padding-bottom: 22px;
 			}
 		}
+	}
+}
+
+section.news {
+	position: relative;
+	
+	.container-fluid {
+		max-width: 1098px;
+	}
+
+	.title {
+		font-weight: 600;
+		font-size: 24px;
+		color: $black;
 	}
 }
