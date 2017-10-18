@@ -1,0 +1,60 @@
+.button {
+	background-color: $green;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: $gray;
+	padding: 15px 45px 17px 45px;
+	border: none;
+	color: #fff;
+	overflow: hidden;
+	transition: opacity .3s;
+	min-width: 190px;
+
+	&:hover {
+		opacity: .6;
+		cursor: pointer;
+	}
+}
+
+input[type="submit"] {
+	background-color: $green;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	color: $gray;
+	font-weight: 500;
+	padding: 15px 45px 17px 45px;
+	border: none;
+	color: #fff;
+	overflow: hidden;
+	transition: opacity .3s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		opacity: .6;
+	}
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	min-width: 244px;
+	height: 58px;
+	border: 1px solid $gray;
+	padding: 25px 10px 25px 20px;
+	font-size: 14px;
+	color: $black;
+	transition: all .3s;
+
+	&:focus {
+		outline: none;
+		border-color: $blue-light;
+	}
+}  

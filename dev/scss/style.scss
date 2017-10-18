@@ -1,9 +1,15 @@
 // base
 @import 'base/variables';
 @import 'base/font-face';
+@import 'base/icomoon';
+@import 'base/helpers';
 
 // components
 @import 'components/slick';
+@import 'components/buttons';
+
+// pages
+@import 'components/index';
 
 // layout
 @import 'layout/header';

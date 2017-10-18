@@ -28,6 +28,22 @@ function createSlick(itemClass) {
 	  slidesToShow: 3,
 	  swipeToSLide: true,
 	  centerMode: true,
-	  variableWidth: true
+	  variableWidth: true,
+	  responsive: [
+	  	{
+	  		breakpoint: 992,
+		    settings: {
+		      slidesToShow: 2,
+			  	variableWidth: false,
+          centerMode: false
+		  	}
+	  	},
+	  	{
+	  		breakpoint: 768,
+		    settings: {
+		      slidesToShow: 1
+		  	}
+	  	}
+	  ]
 	});
 }

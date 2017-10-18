@@ -1,0 +1,26 @@
+.mobile-hidden {
+	display: none;
+
+	@media (min-width: 992px) {
+		display: block;
+	}
+}
+
+.desktop-hidden {
+	display: block;
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+
+.row-flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	& > div[class^='col'] {
+		float: none;
+	}
+}

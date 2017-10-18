@@ -10,4 +10,5 @@ require('./slick/my_slick.js');
 
 // my
 require('./tabs/index.js');
+require('./mobile-menu.js');
 
