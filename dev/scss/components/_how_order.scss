@@ -1,0 +1,60 @@
+section.how_order {
+	position: relative;
+	padding: 100px 0 100px 0;
+	
+	.title {
+		font-size: 30px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+		padding: 40px 0 23px;
+	}
+
+	.list,
+	.text {
+		font-size: 14px;
+	}
+
+	&.delivery {
+		padding: 100px 0 50px;
+
+		.text {
+			max-width: 725px;
+
+			p {
+				margin-bottom: 30px;
+			}
+
+			strong {
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+
+		.text-uppercase {
+			font-weight: 500;
+			padding-top: 0;
+		}
+
+		.list {
+			padding-bottom: 23px;
+		}
+	}
+
+	&.promises {
+		padding: 100px 0 0;
+
+		.list {
+			max-width: 810px;
+
+			li{
+				padding-bottom: 27px;
+			}
+		}
+	}
+
+	.list {
+		padding-bottom: 45px;
+	}
+}

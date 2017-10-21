@@ -374,6 +374,40 @@ section.consultation {
         section.consultation .inputs input {
           margin-bottom: 0; } }
 
+section.how_order {
+  position: relative;
+  padding: 100px 0 100px 0; }
+  section.how_order .title {
+    font-size: 30px; }
+  section.how_order .subtitle {
+    font-size: 18px;
+    padding: 40px 0 23px; }
+  section.how_order .list,
+  section.how_order .text {
+    font-size: 14px; }
+  section.how_order.delivery {
+    padding: 100px 0 50px; }
+    section.how_order.delivery .text {
+      max-width: 725px; }
+      section.how_order.delivery .text p {
+        margin-bottom: 30px; }
+      section.how_order.delivery .text strong {
+        font-size: 18px;
+        font-weight: 500; }
+    section.how_order.delivery .text-uppercase, section.how_order.delivery .initialism {
+      font-weight: 500;
+      padding-top: 0; }
+    section.how_order.delivery .list {
+      padding-bottom: 23px; }
+  section.how_order.promises {
+    padding: 100px 0 0; }
+    section.how_order.promises .list {
+      max-width: 810px; }
+      section.how_order.promises .list li {
+        padding-bottom: 27px; }
+  section.how_order .list {
+    padding-bottom: 45px; }
+
 header {
   position: fixed;
   background-color: #1a2c44;

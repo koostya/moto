@@ -1,0 +1,29 @@
+include pug/common/head.pug
+	block content
+		include pug/common/header.pug
+		main#main
+			section.how_order
+				.container-fluid
+					.row
+						.col-xs-12
+							h1.title Как заказать
+							h2.subtitle Для того, чтобы заказать товар, необходимо:
+							ul.list
+								li Кликнуть напротив него «в корзину»,
+								li После чего в соответствующей форме заполнить поля со своей контактной информацией.
+								li В течение для с Вами свяжется наш менеджер для уточнения деталей.
+							h2.subtitle Приобрести товар можно также в кредит. 
+							.text
+								p Также вы можете просто позвонить по номеру (098) 753 75 71, чтобы непосредственно обсудить вопросы, связанные с доставкой и оплатой. 
+			section.consultation
+				.title.text-center Заказать консультацию
+				.container-fluid
+					.row.row-flex
+						.col-xs-12.text-center
+							.inputs
+								input(type="text" placeholder='Ваше имя')
+								input(type="tel" placeholder='Номер телефона')
+								input(type="email" placeholder='E-mail')
+						.col-xs-12.text-center
+							input(type='submit' value='Оформить заказ')
+		include pug/common/footer.pug

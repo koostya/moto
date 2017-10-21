@@ -1,0 +1,21 @@
+include pug/common/head.pug
+	block content
+		include pug/common/header.pug
+		main#main
+			section.how_order
+				.container-fluid
+					.row
+						.col-xs-12
+							h1.title О нас
+			section.consultation
+				.title.text-center Заказать консультацию
+				.container-fluid
+					.row.row-flex
+						.col-xs-12.text-center
+							.inputs
+								input(type="text" placeholder='Ваше имя')
+								input(type="tel" placeholder='Номер телефона')
+								input(type="email" placeholder='E-mail')
+						.col-xs-12.text-center
+							input(type='submit' value='Оформить заказ')
+		include pug/common/footer.pug

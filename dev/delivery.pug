@@ -1,0 +1,48 @@
+include pug/common/head.pug
+	block content
+		include pug/common/header.pug
+		main#main
+			section.how_order.delivery
+				.container-fluid
+					.row
+						.col-xs-12
+							h1.title Доставка и оплата
+							h2.subtitle Доставка:
+							.text
+								p
+									strong Доставка в пределах городов
+									|, в которых имеются наши отделения, является бесплатной. Однако, если доставить необходимо за пределы города, то её стоимость обсуждается отдельно в каждом конкретном случае. 
+							.text
+								p
+									strong Обратите внимание
+									|, курьер, который доставляет товар, не проверяет и не консультирует покупателя. По всем вопросам следует обращаться к менеджеру. 
+							.text
+								p
+									strong Доставка в пределах Украины
+									|  может осуществляться перевозчиками "САТ", "Ночной Экспресс", "Украинский Экспресс", "Автолюкс", "Новая Почта", "Деливери", "Мист-Экспресс"
+							h2.subtitle Оплата:
+							h2.subtitle.text-uppercase БЕЗНАЛИЧНЫЙ РАСЧЕТ
+							.text.text-uppercase
+								p БЕЗНАЛИЧНЫЙ РАСЧЕТ ДОСТУПЕН ПО ВСЕЙ ТЕРРИТОРИИ УКРАИНЫ, А ОПЛАТА В ЛЮБОМ БАНКЕ ВАШЕГО ГОРОДА. СВЯЖИТЕСЬ С НАШИМИ МЕНЕДЖЕРАМИ ДЛЯ ВЫСТАВЛЕНИЯ СЧЕТА ДЛЯ ОПЛАТЫ. 
+							h2.subtitle.text-uppercase НАЛИЧНЫМИ
+							p.list_title Оплата наличными возможна при:
+							ul.list
+								li доставке курьерскими службами;
+								li нашей курьерской доставке;
+							h2.subtitle.text-uppercase НАЛИЧНЫМИ - НАЛОЖЕННЫЙ ПЛАТЁЖ (ОПЛАТА ПРИ ПОЛУЧЕНИИ)
+							p.list_title Услуга наложенного платежа доступна при:
+							ul.list
+								li доставке курьерскими службами;
+								li доставке нашим курьером (оплата после получения);
+			section.consultation
+				.title.text-center Заказать консультацию
+				.container-fluid
+					.row.row-flex
+						.col-xs-12.text-center
+							.inputs
+								input(type="text" placeholder='Ваше имя')
+								input(type="tel" placeholder='Номер телефона')
+								input(type="email" placeholder='E-mail')
+						.col-xs-12.text-center
+							input(type='submit' value='Оформить заказ')
+		include pug/common/footer.pug

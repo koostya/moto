@@ -68,6 +68,26 @@ module.exports = {
       chunks: ['index'],
       template: PATHS.dev + '/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: '../how_order.html',
+      chunks: ['how_order'],
+      template: PATHS.dev + '/how_order.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../delivery.html',
+      chunks: ['delivery'],
+      template: PATHS.dev + '/delivery.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../promises.html',
+      chunks: ['promises'],
+      template: PATHS.dev + '/promises.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../about_us.html',
+      chunks: ['about_us'],
+      template: PATHS.dev + '/about_us.pug'
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
