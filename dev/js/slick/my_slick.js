@@ -25,3 +25,42 @@ $('.brands_carusel').slick({
 	  }
   ]
 });
+
+$('.big_product_carusel').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: true,
+	arrows: false,
+	fade: true,
+	asNavFor: '.small_product_carusel'
+});
+
+$('.small_product_carusel').slick({
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	asNavFor: '.big_product_carusel'
+});
+
+$('.simple_products .section.tabs_slider').slick({
+	slidesToShow: 3,
+	swipeToSLide: true,
+	centerMode: true,
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				variableWidth: false,
+				centerMode: false
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+	]
+});

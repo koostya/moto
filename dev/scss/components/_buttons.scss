@@ -4,9 +4,10 @@
 	text-align: center;
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 300;
 	color: $gray;
-	padding: 15px 45px 17px 45px;
+	padding: 15px 0 17px 0;
+	max-width: 203px;
 	border: none;
 	color: #fff;
 	overflow: hidden;
@@ -16,6 +17,13 @@
 	&:hover {
 		opacity: .6;
 		cursor: pointer;
+	}
+
+	&.white {
+		background-color: transparent;
+		border: 3px solid $green;
+		font-size: 14px;
+		color: $black;
 	}
 }
 
@@ -58,3 +66,107 @@ input[type="email"] {
 		border-color: $blue-light;
 	}
 }  
+
+input[type='number'] {
+	-webkit-appearance: none;
+	margin: 0;
+	width: 60px;
+	height: 33px;
+	box-shadow: 0 0 10px 0 rgba(227, 227, 227, 1);
+	border: none;
+	text-align: center;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.quantity_input {
+	position: relative;
+
+	span {
+		position: absolute;
+		display: block;
+		border: 5px solid transparent;
+		right: -2px;
+
+		&.plus {
+			border-bottom: 8px solid $black;
+			top: 0;
+		}
+
+		&.minus {
+			border-top: 8px solid $black;
+			bottom: 0;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+input[type='number'] {
+	-moz-appearance:textfield;
+	position: relative;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 105px;
+	border: 1px solid $gray2;
+	padding: 23px 50px 23px 21px;
+	outline: none;
+}
+
+.checkbox {
+	width: 13px;
+	height: 13px;
+	position: relative;
+	border: 1px solid $gray2;
+
+	input {
+		position: absolute;
+		left: -9999px;
+
+		&:checked {
+
+			& + label::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 44%;
+			left: 60%;
+			transform: translate(-50%, -50%) rotate(-45deg);
+			display: block;
+			width: 10px;
+			height: 7px;
+			border: 2px solid $green;
+			border-top: none;
+			border-right: none;
+			transition: opacity .3s;
+			opacity: 0;
+		}
+	}
+}

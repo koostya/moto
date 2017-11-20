@@ -1,0 +1,59 @@
+include pug/common/head.pug
+	block content
+		include pug/common/header.pug
+		main#main
+			section.how_order.cart
+				.container-fluid
+					.row
+						.col-xs-12
+							h1.title.main Оформление заказа
+						.col-xs-12
+							.items
+								.item
+									.picture
+										img(src="assets/images/cart_img.png", alt="")
+									.name
+										span Мототрактор Garden Scout T18 Garden Scout T18
+									.quantity
+										.title Количество
+										.quantity_input
+											input(type="number")
+											span.plus
+											span.minus
+									.total_cost
+										.title Стоимость
+										span 79 258 
+											span грн
+						.col-xs-12
+							h1.title.main.second_level Оформить заказ
+							.cart_form
+								.row
+									.col-md-6.col-xs-12
+										.inputs
+											input(type="text" placeholder='Ваше имя, фамилия, отчество')
+											input(type="tel" placeholder='Номер телефона')
+											input(type="email" placeholder='E-mail')
+											.text
+												p Выберите удобный способ доставки для данного заказа
+											.types_of_transporting
+												.item
+													.checkbox
+														input(type="checkbox" id='delivery_method')
+														label(for="delivery_method")
+													label(for="delivery_method").text_checkbox Самовывоз - 0 грн.
+									.col-md-6.col-xs-12
+										.order_comments
+											textarea(placeholder='Комментарий к заказу')
+											.button Оформить заказ
+			section.consultation
+				.title.text-center Заказать консультацию
+				.container-fluid
+					.row.row-flex
+						.col-xs-12.text-center
+							.inputs
+								input(type="text" placeholder='Ваше имя')
+								input(type="tel" placeholder='Номер телефона')
+								input(type="email" placeholder='E-mail')
+						.col-xs-12.text-center
+							input(type='submit' value='Оформить заказ')
+		include pug/common/footer.pug

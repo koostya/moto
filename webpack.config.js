@@ -88,6 +88,21 @@ module.exports = {
       chunks: ['about_us'],
       template: PATHS.dev + '/about_us.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: '../product.html',
+      chunks: ['product'],
+      template: PATHS.dev + '/product.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../cart.html',
+      chunks: ['cart'],
+      template: PATHS.dev + '/cart.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../catalog.html',
+      chunks: ['catalog'],
+      template: PATHS.dev + '/catalog.pug'
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'

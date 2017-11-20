@@ -1,0 +1,459 @@
+section.product {
+
+	.title.product {
+		text-transform: uppercase;
+		font-size: 24px;
+		margin-bottom: 23px;
+	}
+
+	.product_wrap {
+			max-width: 444px;
+
+		.big_product_carusel {
+			max-width: 444px;
+			margin-bottom: 12px;
+
+			.item {
+				max-width: 444px;
+				max-height: 280px;
+				outline: none;
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		.small_product_carusel {
+			max-width: 444px;
+
+			.item {
+				width: 102px;
+				height: 70px;
+				position: relative;
+				margin: 0 6px 0 6px;
+				outline: none;
+
+				&:focus {
+					outline: none;
+				}
+
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.cost_wrap {
+		border-right: 2px solid $gray3;
+		
+		.cost {
+			margin-bottom: 12px;
+
+			span {
+				font-size: 20px;
+				color: $black;
+				font-weight: 700;
+			}
+		}
+
+		.button {
+			margin-bottom: 12px;
+		}
+
+		.free_delivery {
+			display: inline-block;
+			text-align: center;
+			margin-bottom: 12px;
+
+			.img {
+				float: left;
+				margin-right: 7px;
+			}
+
+			.text{
+				float: left;
+			}
+		}
+
+		.simple_description {
+			max-width: 126px;
+			margin-left: 14px;
+
+			.title {
+				font-size: 14px;
+				font-weight: 500;
+				margin-bottom: 14px;
+				text-align: left;
+			}
+
+			.item {
+				display: flex;
+				max-width: 120px;
+				justify-content: space-between;
+
+				.name {
+					display: block;
+					float: left;
+					font-size: 12px;
+					font-weight: 400;
+				}
+
+				.info {
+					display: block;
+					float: right;
+					font-size: 12px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.more_info {
+
+		.item {
+			display: flex;
+			justify-content: left;
+			margin-bottom: 21px;
+
+			.img {
+				margin-right: 15px;
+			}
+
+			.text {
+
+				.title {
+					font-size: 13px;
+					font-weight: 500;
+					margin-bottom: 4px;
+				}
+
+				p {
+					font-size: 12px;
+					margin-bottom: 2px;
+				}
+			}
+		}
+	}
+}
+
+section.product_tabs {
+	
+	.tabs {
+		text-align: center;
+		margin-bottom: 115px;
+
+		.item {
+			font-size: 16px;
+			font-weight: 500;
+			display: inline-block;
+			margin-right: 40px;
+			padding: 12px 21px 12px 21px;
+			transition: all .3s;
+			border-radius: 25px;
+
+			&:hover {
+				box-shadow: 0 0 0 1px $gray2;
+				cursor: pointer;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.description {
+		margin-bottom: 80px;
+
+		.name {
+			font-size: 24px;
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.title {
+			font-size: 24px;
+			text-align: center;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+
+		.detail_description {
+
+			p {
+				margin-bottom: 23px;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.table {
+
+		table {
+			width: 100%;
+
+			tr {
+				height: 45px;
+			}
+
+			td {
+				padding-left: 25px;
+			}
+
+			tr.title {
+				font-size: 16px;
+				font-weight: 500;
+				background-color: $green;
+				color: $white;
+			}
+		}
+	}
+
+	.video {
+		position: relative;
+		max-width: 617px;
+		min-height: 347px;
+		margin: 0 auto;
+		margin-bottom: 22px;
+
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($black, .7);
+		}
+
+		.play_button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.comments {
+
+		.comment {
+			background-color: $gray4;
+			padding: 30px 50px 20px 20px;
+			margin-bottom: 10px;
+
+			.top {
+				display: flex;
+				text-align: left;
+				margin-bottom: 23px;
+
+				.name {
+					margin-right: 14px;
+
+					.text {
+						font-size: 16px;
+						font-weight: 700;
+						margin-bottom: 5px;
+					}
+
+					.position {
+						font-size: 14px;
+						font-weight: 400;
+					}
+				}
+
+				.date {
+					font-size: 12px;
+					color: $gray2;
+				}
+			}
+
+			.stars {
+				position: relative;
+				width: 106px;
+				height: 20px;
+				margin-right: 85px;
+
+				.star {
+					position: absolute;
+					transition: all .3s;
+					cursor: pointer;
+
+					&:nth-child(1) {
+						top: 0;
+						left: 80%;
+
+						&:hover {
+							opacity: .6;
+
+							& ~ .star {
+								opacity: .6;
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						top: 0;
+						left: 60%;
+						
+						&:hover {
+							opacity: .6;
+
+							& ~ .star {
+								opacity: .6;
+							}
+						}
+					}
+
+					&:nth-child(3) {
+						top: 0;
+						left: 40%;
+						
+						&:hover {
+							opacity: .6;
+
+							& ~ .star {
+								opacity: .6;
+							}
+						}
+					}
+
+					&:nth-child(4) {
+						top: 0;
+						left: 20%;
+						
+						&:hover {
+							opacity: .6;
+
+							& ~ .star {
+								opacity: .6;
+							}
+						}
+					}
+
+					&:nth-child(5) {
+						top: 0;
+						left: 0;
+						
+						&:hover {
+							opacity: .6;
+
+							& ~ .star {
+								opacity: .6;
+							}
+						}
+					}
+				}
+			}
+
+			.content {
+
+				p {
+					font-size: 14px;
+					margin-bottom: 75px;
+
+					.more {
+						color: $orange;
+						cursor: pointer;
+						transition: all .3s;
+
+						&:hover {
+							color: $green;
+						}
+					}
+				}
+			}
+
+			.bottom {
+				display: flex;
+				justify-content: space-between;
+
+				.like, .leave_comment, .leave_complaint {
+					display: flex;
+					align-content: center;
+
+					.img {
+						margin-right: 8px;
+					}
+
+					.text {
+						transition: all .3s;
+						font-size: 13px;
+
+						&:hover {
+							color: $green;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+
+		.comment_area {
+			text-align: right;
+			margin-bottom: 28px;
+
+			textarea {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+section.simple_products {
+	position: relative;
+	padding: 53px 0 119px;
+
+	.title {
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: 60px;
+	}
+
+	.products {
+		position: relative;
+
+		.section {
+			display: block;
+
+			&.active_tab {
+				display: block;
+			}
+		}
+
+		.item {
+			position: relative;
+			text-align: center;
+			min-width: 211px;
+			padding-bottom: 32px;
+			margin: 0 15px 0 15px;
+
+			@media (min-width: 480px) {
+				min-width: 311px;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			.description {
+				max-width: 235px;
+				display: inline-block;
+			}
+
+			.cost {
+				font-weight: 600;
+				font-size: 24px;
+				padding-bottom: 22px;
+			}
+		}
+	}
+}
